@@ -1,0 +1,154 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body{
+    text-align: center;
+}
+
+table{
+    border: solid black thin;
+    margin: auto;
+}
+
+
+table td:not(:first-child){
+    border: thin solid black
+}
+
+
+/* Resaltar los ejes principales */
+table th, table tr td:nth-child(1){
+    border-radius: 20%;
+    color:white;
+}
+
+/* A continuación se procede a crear un selector para cada elemento de la cabecera y primer elemento de cada fila(Representan los tipos)*/
+
+/* El color blanco del texto dificulta la legibilidad del mismo en algunos caso, se reemplazara el color por el */
+
+/* Colores tipo normal */
+table th:nth-child(2), table tr:nth-child(1) td:nth-child(1){
+    color:black;
+    font-style: bold;
+    
+}
+
+
+/* Colores tipo fuego */
+table th:nth-child(3), table tr:nth-child(2) td:nth-child(1){
+    background-color: red;
+    
+}
+
+/* Colores tipo agua */
+table th:nth-child(4), table tr:nth-child(3) td:nth-child(1){
+    background-color: blue;
+    
+}
+
+/* Colores tipo planta */
+table th:nth-child(5), table tr:nth-child(4) td:nth-child(1){
+    background-color: green;
+    
+}
+
+/* Colores tipo eléctrico*/
+table th:nth-child(6), table tr:nth-child(5) td:nth-child(1){
+    background-color: yellow;
+    
+    color:black;
+    
+}
+
+/* Colores tipo Hielo */
+table th:nth-child(7), table tr:nth-child(6) td:nth-child(1){
+    background-color: cyan;
+    
+}
+/* Colores tipo lucha */
+table th:nth-child(8), table tr:nth-child(7) td:nth-child(1){
+    background-color: orangered;
+    
+}
+/* Colores tipo veneneo */
+table th:nth-child(9), table tr:nth-child(8) td:nth-child(1){
+    background-color: purple;
+    
+}
+/* Colores tipo tierra */
+table th:nth-child(10), table tr:nth-child(9) td:nth-child(1){
+    background-color: brown;
+    
+}
+/* Colores tipo volador */
+table th:nth-child(11), table tr:nth-child(10) td:nth-child(1){
+    background-color: skyblue;
+    
+}
+/* Colores tipo psíquico */
+table th:nth-child(12), table tr:nth-child(11) td:nth-child(1){
+    background-color: magenta;
+    
+}
+/* Colores tipo bicho */
+table th:nth-child(13), table tr:nth-child(12) td:nth-child(1){
+    background-color: darkolivegreen;
+    
+}
+
+
+/* Colores tipo Roca */
+table th:nth-child(14), table tr:nth-child(13) td:nth-child(1){
+    background-color: darkgoldenrod;
+    
+}
+
+
+/* Colores tipo Fantasma */
+table th:nth-child(15), table tr:nth-child(14) td:nth-child(1){
+    background-color: slateblue;
+    
+}
+
+/* Colores tipo Dragón */
+table th:nth-child(16), table tr:nth-child(15) td:nth-child(1){
+    background-color: darkblue;
+    
+}
+
+/* Colores tipo Siniestro */
+table th:nth-child(17), table tr:nth-child(16) td:nth-child(1){
+    background-color: black;
+    
+}
+
+/* Colores tipo Acero */
+table th:nth-child(18), table tr:nth-child(17) td:nth-child(1){
+    background-color: grey;
+    
+}
+
+/* Colores tipo Hada */
+table th:nth-child(19), table tr:nth-child(18) td:nth-child(1){
+    background-color: pink;
+    
+}
+
+/* Casos de resistencias y supereficaz. Selectores a aplicar en el javascript */
+
+
+.resistencia{
+    color: blue;
+}
+
+.superEficaz{
+    color: red;
+}

@@ -1,0 +1,47 @@
+/* Debido a que el cálculo global se realiza al final se invierte el orden de los hijos del body para que este salga el primero */
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: lightcyan;
+    
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    
+}
+
+h2.titulo{
+    text-align: center;
+    text-decoration: none;
+}
+
+main.main{
+
+    text-align: center;
+   
+    
+    
+}
+
+
+/* Tratar de asemejar el resultado a como se veria en los juegos que seria una tabla de 3 filas y 2 columnas */
+#analisisIndividual{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#analisisIndividual span{
+    /* Con el 50% en la fila se logra que hayan 2 columnas y n filas */
+    flex-basis: 50%;
+    text-align: center;
+    border: solid thin black;
+    
+}

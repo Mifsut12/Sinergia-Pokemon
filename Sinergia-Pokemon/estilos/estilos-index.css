@@ -1,0 +1,35 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body{
+	text-align: center;
+}
+
+
+/* Plantilla del formulario Etiqueta tipo 1 tipo 2 */
+form.form{
+	display: grid;
+	grid-template-columns:repeat(3,auto);
+	margin-left: auto;
+	margin-right: auto;
+	border:solid black thin;
+	max-width: 30vh;
+}
+
+form p{
+	border-bottom: solid black thin;
+}
+
+/* Ocupar toda la fila */
+form input#submit{
+	grid-column:span 3;
+}
+
